@@ -1,0 +1,37 @@
+{
+  "name": "hayakit-mcp",
+  "version": "1.0.0",
+  "description": "Deterministic Japanese/Taiwan era, craft, booklet imposition, camping, and cassette calculators for MCP.",
+  "mcpName": "com.hayakit/calculators",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://hayakit.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/changrun1/hayakit-mcp.git"
+  },
+  "bin": {
+    "hayakit-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/index.js --banner:js=\"#!/usr/bin/env node\" && node -e \"const fs=require('fs');const p='dist/index.js';fs.chmodSync(p,0o755);\"",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/smoke.mjs",
+    "pack:mcpb": "node scripts/build-mcpb.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "latest",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.hayakit/calculators",
+  "title": "Hayakit Calculators",
+  "description": "Offline Japanese/Taiwan era, craft, booklet imposition, camping, and cassette calculators.",
+  "version": "1.0.0",
+  "websiteUrl": "https://hayakit.com",
+  "icons": [
+    {
+      "src": "https://hayakit.com/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/changrun1/hayakit-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/changrun1/hayakit-mcp/releases/download/v1.0.0/hayakit-calculators.mcpb",
+      "fileSha256": "b5fde6cd9be15148aa810fe729fa0aec411ea16854fe0899a3e9a0561dee0506",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

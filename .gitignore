@@ -1,0 +1,7 @@
+node_modules/
+dist/
+build/
+*.mcpb
+*.pem
+*.hex
+.DS_Store
