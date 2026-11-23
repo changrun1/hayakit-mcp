@@ -21,6 +21,21 @@ Official Model Context Protocol (MCP) server for [Hayakit](https://hayakit.com) 
 
 ## Installation
 
+### NPX (Claude Code, Cursor, Windsurf, Cline, etc.)
+
+Add to your MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "hayakit": {
+      "command": "npx",
+      "args": ["-y", "hayakit-mcp"]
+    }
+  }
+}
+```
+
 ### Desktop Extension (`.mcpb` — Claude Desktop & compatible hosts)
 
 Download `hayakit-calculators.mcpb` from the [GitHub Releases](https://github.com/changrun1/hayakit-mcp/releases) page and open it with your MCP host app.

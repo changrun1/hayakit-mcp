@@ -68,7 +68,7 @@ import {
 
 const server = new McpServer({
   name: 'hayakit-calculators',
-  version: '1.0.0',
+  version: '1.0.1',
 });
 
 function jsonResult(data: unknown, webUrl: string) {

@@ -18,7 +18,7 @@ const manifest = {
   manifest_version: '0.3',
   name: 'hayakit-calculators',
   display_name: 'Hayakit Calculators',
-  version: '1.0.0',
+  version: '1.0.1',
   description: 'Deterministic Japanese/Taiwan era, craft, booklet imposition, camping, and cassette calculators.',
   long_description:
     'Offline deterministic calculators powered by Hayakit (https://hayakit.com): Japanese & Taiwan ROC era conversion, can-badge rosette ribbon length, paracord bracelet length, camping tarp guyline & footprint, saddle-stitch booklet imposition, Japanese doujinshi shipping thickness, leathercraft saddle-stitch thread, and cassette Side A/B track splitting.',
